@@ -171,7 +171,7 @@ module Locomotive
             params = entry.to_params
 
             entry.each_dynamic_field do |field, value|
-              unless field.is_relationship?
+              #unless field.is_relationship?
                 case field.type.to_sym
                 when :string, :text
                   params[field.name] = self.replace_content_assets!(value)
@@ -185,7 +185,7 @@ module Locomotive
                 else
                   params[field.name] = value
                 end
-              end
+              #end
             end
 
             params
