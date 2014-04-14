@@ -7,12 +7,12 @@ module Locomotive
         ## fields ##
         field :label
         field :name
-        field :type,      default: :string
+        field :type,       default: :string
         field :hint
-        field :position,  default: 0
-        field :required,  default: false
-        field :unique,    default: false
-        field :localized, default: false
+        field :position,   default: 0
+        field :required,   default: false
+        field :unique,     default: false
+        field :localized,  default: false
         field :searchable, default: false
 
         # text
